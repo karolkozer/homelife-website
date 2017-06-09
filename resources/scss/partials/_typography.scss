@@ -1,0 +1,85 @@
+/**********************************************
+** TYPOGRAPHY
+***********************************************/
+h1 {
+    font-weight: 500;
+    line-height: 120%;
+    font-size: 220%;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+h2 {
+    font-weight: 400;
+    line-height: 120%;
+    font-size: 165%;
+    word-spacing: 2px;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+    margin-bottom: 30px;
+}
+
+.paragraph-short {
+    font-size: 80%;
+    line-height: 145%;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin-bottom: 35px;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+}
+
+.city {
+    display: inline-block;
+    background-color: $white;
+    color: $blue;
+    padding: 10px 40px;
+    font-weight: 400;
+    font-size: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 20px  rgba(62, 62, 62, 0.02);
+}
+
+.address, 
+.mobile,
+.email {
+    font-size: 80%;
+    margin-bottom: 10px;
+    word-spacing: 1px;
+    line-height: 145%;
+    
+    span {
+        margin-left: 10px;
+    }
+}
+
+
+/*----- Icons -----*/
+.icon-big {
+    display: inline-block;
+    width: 30px;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-right: 8px;
+}
+
+.icon-small {
+    display: inline-block;
+    text-align: center;
+    color: $white;
+    font-size: 90%;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+
+
+
+
+
+

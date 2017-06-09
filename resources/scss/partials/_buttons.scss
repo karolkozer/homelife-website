@@ -1,0 +1,16 @@
+/**********************************************
+** BUTTONS
+***********************************************/
+.btn {
+    display: inline-block;
+    font-size: 70%;
+    padding: 15px 70px;
+    background-color: $white;
+    color: $blue;
+    border-radius: 5px;
+    font-weight: 400;
+    text-decoration: none;
+    box-shadow: 0 2px 20px  rgba(62, 62, 62, 0.08);
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}

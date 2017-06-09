@@ -1,0 +1,62 @@
+/**********************************************
+** HEADER
+***********************************************/
+
+header {
+    
+    z-index: 7000;
+    transition: all 0.4s;
+    
+    .logo {
+        float: left;
+        margin-top: 50px;
+        height: 20px;
+    }
+    
+    .main-nav {
+        float: right;
+        list-style: none;
+        margin-top: 45px;
+        
+        li {
+            display: inline-block;
+            margin-right: 20px;
+            
+            a:link, a:visited {
+                font-size: 90%;
+                text-decoration: none;
+                padding: 8px 18px;
+                color: $white;
+                font-weight: 100;
+                letter-spacing: 1px;
+                transition: all 0.2s;
+            }
+            
+            a:hover, a:active {
+                background-color: $white;
+                color: $blue;
+            }
+        }
+    }
+    
+}
+
+@for $i from 1 through 3 {
+    .label-#{$i} {
+        @if $i == 1 {
+            animation-delay: 0.2s;
+        } @else {
+            animation-delay: ($i / 10) * 4s;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

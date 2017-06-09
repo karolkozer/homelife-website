@@ -1,0 +1,64 @@
+/**********************************************
+** BASE
+***********************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $white;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: $white;
+    text-rendering: optimizeLegibility;
+    position: relative;
+    overflow: hidden;
+}
+
+.row {
+    max-width: 1040px;
+    margin: 0 auto;
+}
+
+section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+     
+    .content {
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    }
+    
+    &.active {
+        display: block;
+    }
+}
+
+.box {
+    padding: 2%;
+}
+
+
+/*---- SlideShow Background ----*/
+.slide-show-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/background-blue-light.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    -webkit-clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 650% 0%);
+    clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 650% 0%);
+    z-index: -2;
+}
+

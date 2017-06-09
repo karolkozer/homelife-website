@@ -1,0 +1,74 @@
+/**********************************************
+** CONTACT
+***********************************************/
+.section-contact {
+    
+    display: none;
+    
+    .text-box {
+        margin-top: 100px;
+        margin-left: 4%;
+        
+        .contact-info {
+            animation-delay: 0.5s;
+        }
+    }
+    
+    .social {
+        margin-top: 15px;
+        list-style: none;
+        float: left;
+        
+        li {
+            display: inline-block;
+            margin-right: 5px;
+            width: 30px;
+            padding: 5px 8px;
+            border-radius: 5px;
+            text-align: center;
+            transition: all 0.2s;
+        }
+        
+        li:hover {
+            background-color: $white;
+        }
+        
+        li:hover .icon-small {
+            color: $blue;
+        }
+    }
+    
+    .bridge {
+        height: 320px;
+        width: 320px;
+        border-radius: 50%;
+        background-image: url(../css/img/bridge-sf.png);
+        background-position: center top;
+        background-size: cover;
+        margin: 90px auto 0 auto;
+        animation-delay: 1.4s;
+    }
+}
+
+@for $i from 1 through 4 {
+    .social-#{$i} {
+        @if $i == 1 {
+            animation-delay: 1.2s;
+        } @else {
+            animation-delay: ($i / 10) * 7.5s;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

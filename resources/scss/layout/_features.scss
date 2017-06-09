@@ -1,0 +1,55 @@
+/**********************************************
+** FEATURES
+***********************************************/
+.section-features {
+    display: none;
+    
+    .content {
+        .text-box {
+            margin-top: 100px;
+            margin-left: 4%;
+        }
+        
+        .laptop-screen {
+            width: 110%;
+            margin: 110px auto 20px auto;
+            padding-right: 10%;
+//            border: 1px solid red;
+        }
+        
+        .features-box {
+            
+            width: 70%;
+            margin: 0 auto;
+//            border: 1px solid red;
+            ul {
+                list-style: none;
+                margin-bottom: 10px;
+            }
+            
+            li {
+//                border: 1px solid purple;
+                padding: 5px 0;
+                width: 150px;
+                display: inline-block;
+                float: left;
+                margin-bottom: 16px;
+                letter-spacing: 1px;
+            }
+            
+            li:last-child {
+                float: right;
+            }
+        }
+    }
+}
+
+@for $i from 1 through 4 {
+    .features-#{$i} {
+        @if $i == 1 {
+            animation-delay: 1.2s;
+        } @else {
+            animation-delay: ($i / 10) * 7.5s;
+        }
+    }
+}
